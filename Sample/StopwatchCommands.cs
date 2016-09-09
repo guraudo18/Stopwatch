@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using Microsoft.Practices.Prism.Commands;
 using System.Timers;
+using System.Windows;
 
 namespace SampleStopwatch
 {
@@ -39,6 +40,9 @@ namespace SampleStopwatch
 
             this._action();
             _vm.RunRefresh();
+
+            MessageBox.Show("ボタンが押下されました。");
+
 
         }
 

@@ -41,20 +41,24 @@
             <StackPanel Grid.Column="1" Margin="0,70,0,0">
                 <Button Height="50" Width="200" Margin="20"
                         Content="スタート" FontSize="30"
-                        Command="{Binding StartCommand}">
+                        Command="{Binding StartCommand}"
+                        Uid="StartButton">
                 </Button>
 
                 <Button Height="50" Width="200" Margin="20"
                         Content="ストップ" FontSize="30"
-                        Command="{Binding StopCommand}"/>
+                        Command="{Binding StopCommand}"
+                        Uid="StopButton"/>
 
                 <Button Height="50" Width="200" Margin="20"
                         Content="リセット" FontSize="30"
-                        Command="{Binding ResetCommand}"/>
+                        Command="{Binding ResetCommand}"
+                        Uid="ResetButton"/>
 
                 <Button Height="50" Width="200" Margin="20"
                         Content="Lap" FontSize="30"
-                        Command="{Binding LapCommand}"/>
+                        Command="{Binding LapCommand}"
+                        Uid="LapButton"/>
             </StackPanel>
         </Grid>
     </Grid>
