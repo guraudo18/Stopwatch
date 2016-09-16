@@ -148,7 +148,7 @@ namespace SampleStopwatch
     }
 
     /// <summary>
-    /// ログ出力コマンド
+    /// ログ出力コマンド 
     /// </summary>
     public class OutputLogButtonCommand : ICommand
     {
