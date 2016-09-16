@@ -49,7 +49,7 @@ namespace SampleStopwatch
     }
 
     /// <summary>
-    /// ストップボタン押下時 
+    /// ストップボタン押下時
     /// </summary>
     public class StopCommand : ICommand
     {
