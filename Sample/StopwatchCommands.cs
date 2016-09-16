@@ -49,7 +49,7 @@ namespace SampleStopwatch
     }
 
     /// <summary>
-    /// ストップボタン押下時
+    /// ストップボタン押下時aaa
     /// </summary>
     public class StopCommand : ICommand
     {
@@ -159,7 +159,7 @@ namespace SampleStopwatch
         {
             this._vm = vm;
             this._action = action;
-        }
+        } 
 
         public bool CanExecute(object parameter) 
         {
