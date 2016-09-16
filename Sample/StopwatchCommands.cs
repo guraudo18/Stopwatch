@@ -37,13 +37,8 @@ namespace SampleStopwatch
         {
             //リセットボタンのCanExecuteの条件が変更されたことを通知する。
             _vm.ResetCommand.RaiseCanExecuteChanged();
-
             this._action();
             _vm.RunRefresh();
-
-            MessageBox.Show("ボタンが押下されました。");
-
-
         }
 
         public event EventHandler CanExecuteChanged
@@ -51,8 +46,6 @@ namespace SampleStopwatch
             add { CommandManager.RequerySuggested += value; }
             remove { CommandManager.RequerySuggested -= value; }
         }
-
-
     }
 
     /// <summary>
@@ -168,7 +161,7 @@ namespace SampleStopwatch
             this._action = action;
         }
 
-        public bool CanExecute(object parameter)
+        public bool CanExecute(object parameter) 
         {
             return _vm.LapTimes.Count == 0 ? false : true;
         }

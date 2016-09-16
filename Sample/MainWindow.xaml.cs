@@ -26,6 +26,11 @@ namespace SampleStopwatch
             InitializeComponent();
             this.DataContext = new StopwatchViewModel();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("msg");
+        }
     }
 
     

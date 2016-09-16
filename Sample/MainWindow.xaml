@@ -16,12 +16,19 @@
             <RowDefinition Height="200"/>
             <RowDefinition Height="500"/>
         </Grid.RowDefinitions>
+        <StackPanel Orientation="Vertical">
+            <Button x:Name="MessageBoxButton"
+                    Content="MessageBox"
+                    Height="20" Width="100" 
+                    HorizontalAlignment="Left" 
+                    Margin="5" Click="Button_Click"/>
 
-        <TextBlock Margin="25,30,25,30" 
+            <TextBlock Margin="25,30,25,30" 
                    Height="120" Width="550" FontSize="70"
                    Background="White"
+                   x:Name="CurrentText"
                    Text="{Binding CurrentTime,UpdateSourceTrigger=PropertyChanged}"/>
-        
+        </StackPanel>
         <Grid Height="500" Grid.Row="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="300"/>
@@ -42,23 +49,27 @@
                 <Button Height="50" Width="200" Margin="20"
                         Content="スタート" FontSize="30"
                         Command="{Binding StartCommand}"
-                        Uid="StartButton">
+                        Uid="StartButton"
+                        x:Name="StartButton">
                 </Button>
 
                 <Button Height="50" Width="200" Margin="20"
                         Content="ストップ" FontSize="30"
                         Command="{Binding StopCommand}"
-                        Uid="StopButton"/>
+                        Uid="StopButton"
+                        x:Name="StopButton"/>
 
                 <Button Height="50" Width="200" Margin="20"
                         Content="リセット" FontSize="30"
                         Command="{Binding ResetCommand}"
-                        Uid="ResetButton"/>
+                        Uid="ResetButton"
+                        x:Name="ResetButton"/>
 
                 <Button Height="50" Width="200" Margin="20"
                         Content="Lap" FontSize="30"
                         Command="{Binding LapCommand}"
-                        Uid="LapButton"/>
+                        Uid="LapButton"
+                        x:Name="LapButton"/>
             </StackPanel>
         </Grid>
     </Grid>
