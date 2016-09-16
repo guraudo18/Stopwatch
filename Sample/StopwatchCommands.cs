@@ -35,7 +35,7 @@ namespace SampleStopwatch
         }
         public void Execute(object parameter)
         {
-            //リセットボタンのCanExecuteの条件が変更されたことを通知する。
+            //リセットボタンのCanExecuteの条件が変更されたことを通知する。a
             _vm.ResetCommand.RaiseCanExecuteChanged();
             this._action();
             _vm.RunRefresh();
